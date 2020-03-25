@@ -62,4 +62,7 @@
         max-width: 55%;
        
         }
+    .works-gallery__previews {
+        grid-template-columns: 1fr 1fr 1fr 1fr }
+
   }
