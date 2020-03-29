@@ -8,6 +8,13 @@ header {
     
 }
 
+.header__navigation 
+{
+    display: flex;
+    flex-direction: column
+}
+
+
 
 .header-logo {
     font-size: 28rem;
@@ -46,6 +53,28 @@ header {
 .header--small .header-logo__svg {
    
     display: none
+}
+
+.header--small .header__navigation {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header--small .header__booking-link--center {
+    display:none
+}
+
+
+
+.header__booking-link--right {
+    display:none
+}
+
+.header--small .header__booking-link--right {
+    display:flex;
+    align-items: center;
+    
+ 
 }
 
 

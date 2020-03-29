@@ -22,9 +22,7 @@ body {
     color: #fff;
 }
 
-section {
-    margin-bottom: 10rem
-}
+
 
 a {cursor: pointer;}
 
@@ -49,8 +47,25 @@ button:active, button:focus {outline: none}
 .container {
     width: 95%;
     margin: 0 auto;
+    text-align: center
     
 }
+
+.section__header {
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    border: 3px solid #d6249f;
+    border-radius: 10px;
+    padding: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    margin: 5rem
+    
+    }
 
 @media (min-width: 720px) {
     html {font-size: 1.2px}

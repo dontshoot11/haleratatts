@@ -1,3 +1,5 @@
+.halera {margin-top: 50rem;}
+
 .container--slideshow
 {display: flex;
 justify-content: center;}
@@ -42,6 +44,7 @@ justify-content: center;}
 
 
 @media (min-width: 720px) {
+    .halera {margin-top: 80rem;}
     .slideshow__picture {
         height: 250rem;
         width: 100%

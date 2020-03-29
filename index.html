@@ -15,18 +15,34 @@
 
         <header>
             <div class="container">
-                <div class="header-logo">
+                <nav class="header__navigation">
+                    <div class="header-logo">
 
 
-                    <a class="header-logo__link" href="https://www.instagram.com/haleratatts/">
-                        <img src="svg/instagram.svg" class="header-logo__svg" alt="логотип инстаграма">
-                        <div class="header-logo__text">HALERATATTS</div>
-                        <img src="svg/instagram.svg" class="header-logo__svg" alt="логотип инстаграма">
-                    </a>
+                        <a class="header-logo__link" href="https://www.instagram.com/haleratatts/">
+                            <img src="svg/instagram.svg" class="header-logo__svg" alt="логотип инстаграма">
+
+
+                        </a>
+                        <a class="header-logo__link" href=#>
+                            <div class="header-logo__text">HALERATATTS</div>
+                        </a>
+                        <a class="header-logo__link" href="https://www.instagram.com/haleratatts/">
+                            <img src="svg/instagram.svg" class="header-logo__svg" alt="логотип инстаграма">
+
+
+                        </a>
 
 
 
-                </div>
+
+
+                    </div>
+                    <a href="#booking" class="header__booking-link header__booking-link--right">записаться на сеанс</a>
+                    <a href="#booking" class="header__booking-link header__booking-link--center">записаться на сеанс</a>
+
+                </nav>
+
             </div>
 
 
@@ -49,21 +65,30 @@
 
 
                 </div>
+
+
+
+            </div>
+            <div class="container">
+                <h1 class="section__header">Лера, тату артистка</h1>
+                <p class="description__text">черная татуировка СПб</p>
+                <p class="description__text">уникальный дизайн</p>
+                <p class="description__text">хендпоук, машинка</p>
             </div>
 
 
 
         </section>
+        <section class="description">
 
-        <div class="container">
-            <h1 class="heading">ЗАГОЛОВОЧЕК</h1>
-        </div>
+
+        </section>
 
         <section class="works">
             <div class="container">
 
 
-                <h2 class="heading">Галерея работ</h2>
+                <!--<h2 class="section__header">Галерея работ</h2>-->
                 <div class="works-gallery">
                     <ul class="works-gallery__previews">
                         <li class="works-gallery__preview">
@@ -142,23 +167,20 @@
 
             </div>
         </section>
-        <section class="map">
-            <div class="container">
 
-                <div class="yandex-map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A75876afb0fdb2d321ba1ab9f8de666d9bcf70644ac0927b3e72aaba5cde9f195&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
-                </div>
-            </div>
-        </section>
 
         <footer>
             <div class="container">
                 <div class="footer__content">
-                    <div class="booking">
+                    <div class="booking" id="booking">
 
-                        <button class="booking__button">записаться на сеанс</button>
+                        <h2 class="section__header">записаться на сеанс</h2>
                         <div class="booking__content">
-                            Записаться на сеанс, выбрать свободный эскиз или обсудить свой собственный, вы можете через <a href="https://www.instagram.com/haleratatts/" class="booking__link">instagram</a>
+                            Записаться на сеанс, выбрать свободный эскиз или обсудить свой собственный, вы можете через
+                            <div class="booking__links">
+                                <a href="https://www.instagram.com/haleratatts/" class="booking__link">instagram</a>,
+                                <a href="https://teleg.run/haleratatts" class="booking__link">telegram</a>, <a href="https://vk.com/haleratattoo" class="booking__link">vk</a>
+                            </div>
                         </div>
 
                     </div>

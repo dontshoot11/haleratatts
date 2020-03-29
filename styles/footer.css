@@ -15,25 +15,14 @@ footer{
     justify-content: center;
 
 }
-.booking__button {
-background: inherit;
-border: none;
-color: inherit;
-cursor: pointer;
-border: 3px solid #d6249f;
-border-radius: 10px;
-padding: 10rem;
-font-weight: bold;
-text-transform: uppercase
 
-}
 
 
 
 .booking__content {
     max-width: 66%;
-    margin: 10rem;
-    height: 0rem;
+   
+    //height: 0rem;
     overflow: hidden;
     transition: 0.3s
    
@@ -43,8 +32,8 @@ text-transform: uppercase
     color: #d6249f;
     font-weight: bold;
     font-size: 28rem;
-    display: block;
-    width: 100%;
+ 
+    
     text-align: center;
     text-decoration: underline
 }
