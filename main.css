@@ -39,7 +39,7 @@ section {
 .container {
     width: 95%;
     margin: 0 auto;
-    height: 100%;
+    
 }
 
 @media (min-width: 720px) {

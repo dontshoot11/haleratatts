@@ -12,6 +12,7 @@ $(function() {
     let pictureOne = $('.slideshow .slideshow__picture:eq(0)');
     let pictureTwo = $('.slideshow .slideshow__picture:eq(1)');
     let pictureThree = $('.slideshow .slideshow__picture:eq(2)');
+
     let randomNumber = randomInteger(1, 3);
     console.log(randomNumber);
     if (randomNumber === 1) {
@@ -19,8 +20,9 @@ $(function() {
 
     } else if (randomNumber === 2) {
         pictureTwo.show()
-    } else if (randomNumber === 3) { pictureThree.show() }
-
+    } else if (randomNumber === 3) {
+        pictureThree.show()
+    }
 
 
 
