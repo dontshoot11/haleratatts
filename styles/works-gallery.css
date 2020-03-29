@@ -76,7 +76,8 @@
         .works-gallery__picture-box {
      
         
-        width: 200rem
+        width: 200rem;
+        height: 200rem;
   
        
         }
