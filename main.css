@@ -26,6 +26,15 @@ section {
     margin-bottom: 10rem
 }
 
+a {cursor: pointer;}
+
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+
+button:active, button:focus {outline: none}
+
 .wrapper {
     margin: 0 auto;
   
@@ -34,6 +43,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    position: relative;
 }
 
 .container {

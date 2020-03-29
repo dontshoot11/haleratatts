@@ -1,8 +1,14 @@
 header {
  
     background: #030706;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998
     
 }
+
+
 .header-logo {
     font-size: 28rem;
     
@@ -15,6 +21,8 @@ header {
     color:#d6249f;
 
     font-family: 'New Rocker', cursive;
+
+    transition: 0.3s
 }
 
 .header-logo__link {
@@ -29,6 +37,19 @@ header {
       margin: 3rem
   }
 
+  .header--small .header-logo {
+    font-size: 18rem;
+    margin: 0
+
+}
+
+.header--small .header-logo__svg {
+   
+    display: none
+}
+
+
+
   @media (min-width: 720px) {
       .header-logo {font-size: 42rem;
     margin: 5rem 0 5rem 0}
@@ -38,6 +59,20 @@ header {
         width: 40rem;
         margin: 5rem
     }
+    .header--small .header-logo {
+        font-size: 28rem;
+        margin: 0
+    
+    }
+    
+    .header--small .header-logo__svg {
+       
+        height: 24rem;
+        width: 24rem;
+        margin: 3rem;
+        display: block
+    }
 
       
   }
+
