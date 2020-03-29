@@ -40,6 +40,7 @@
 .works-gallery__picture {
     border-radius: 10px;
     max-width: 100%;
+    
     }
 
 .works-gallery__preview--active {
@@ -66,8 +67,8 @@
 
 .works-gallery__preview--active .works-gallery__picture-box {
      
-    width: 95%;
-    height: 95%;
+    width: 95vw;
+    height: 95vh;
    
     }
 
