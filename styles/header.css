@@ -65,6 +65,12 @@ header {
 }
 
 
+.header__booking-link {
+    text-decoration: underline;
+    font-size: 20rem
+}
+
+
 
 .header__booking-link--right {
     display:none
