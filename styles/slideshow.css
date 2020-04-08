@@ -1,5 +1,5 @@
 .halera {
-    margin-top: 60rem;
+    margin-top: 45rem;
 
 }
 
@@ -50,13 +50,14 @@
 }
 
 .description__text {
-    font-size: 20rem
+    font-size: 20rem;
+    color: #403E3E;
 }
 
 
 
 @media (min-width: 720px) {
-    .halera {margin-top: 90rem;}
+    .halera {margin-top: 70rem;}
     .slideshow__picture {
         height: 250rem;
         width: 100%

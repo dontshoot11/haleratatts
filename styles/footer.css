@@ -1,12 +1,13 @@
 footer{
-    background:#030706;
-    margin-bottom: 10rem;
+    background:#403E3E;
+    
 
 }
 .footer__content {
     color:#fff;
     display: flex;
     justify-content: center;
+    margin: 10rem;
 }
 .booking {
     width: 100%;
@@ -29,14 +30,25 @@ footer{
    
 }
 
+.booking__links {
+    display: flex;
+    justify-content: center;
+}
+
 .booking__link {
     color: #d6249f;
     font-weight: bold;
     font-size: 28rem;
+    margin-right: 10rem;
+    margin-top: 10rem;
  
     
     text-align: center;
     text-decoration: underline
+}
+
+.booking__link:last-child {
+    margin-right: 0;
 }
 
 
@@ -50,4 +62,11 @@ footer{
 .booking__content--opened {
     height: auto;
     transition: 0.3s
+}
+
+.booking__svg {
+   
+    height: 34rem;
+    width: 34rem;
+    
 }

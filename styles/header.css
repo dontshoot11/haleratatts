@@ -1,6 +1,6 @@
 header {
  
-    background: #030706;
+    background: #403E3E;
     position: fixed;
     top: 0;
     width: 100%;
@@ -17,7 +17,7 @@ header {
 
 
 .header-logo {
-    font-size: 28rem;
+    font-size: 32rem;
     
     display: flex;
     text-transform:uppercase;
@@ -25,7 +25,7 @@ header {
     justify-content: center;
     
     
-    color:#d6249f;
+    color:#FFF7F7;
 
     font-family: 'New Rocker', cursive;
 
@@ -37,12 +37,7 @@ header {
     align-items: center
 }
 
-.header-logo__svg {
-   
-      height: 24rem;
-      width: 24rem;
-      margin: 3rem
-  }
+
 
   .header--small .header-logo {
     font-size: 18rem;
@@ -57,7 +52,7 @@ header {
 
 .header--small .header__navigation {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header--small .header__booking-link--center {
@@ -67,18 +62,23 @@ header {
 
 .header__booking-link {
     text-decoration: underline;
-    font-size: 20rem
+    font-size: 20rem;
+
 }
 
 
 
 .header__booking-link--right {
-    display:none
+    display:none;
+    color: #FFF7F7
+    
 }
 
 .header--small .header__booking-link--right {
     display:flex;
     align-items: center;
+    color: #FFF7F7
+   
     
  
 }
@@ -86,7 +86,7 @@ header {
 
 
   @media (min-width: 720px) {
-      .header-logo {font-size: 42rem;
+      .header-logo {font-size: 44rem;
     margin: 5rem 0 5rem 0}
       .header-logo__svg {
    
