@@ -1,9 +1,30 @@
-.works {margin-bottom: 5rem;}
+
+
+.works {
+    margin-bottom: 5rem;
+}
+
+
 .works-gallery {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+    
     
 }
+
+
+
+.description--works {
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+
+}
+
+
 .works-gallery__previews {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,6 +33,7 @@
     overflow: hidden;
   
 }
+
 .works-gallery__preview {
     display: flex;
     justify-content: center;
@@ -41,7 +63,9 @@
     border-radius: 10px;
     overflow: hidden;
     height: 90rem;
-    width: 90rem
+    width: 90rem;
+    border: 1rem #030706 solid
+    
   
     
     }
@@ -49,6 +73,7 @@
 .works-gallery__picture {
     border-radius: 10px;
     max-width: 100%;
+
     
     }
 
@@ -75,10 +100,13 @@
 }
 
 
+
+
 .works-gallery__preview--active .works-gallery__picture-box {
      
     width: 95vw;
     height: 95vh;
+    border: none
    
     }
 
@@ -86,11 +114,48 @@
 
  display: block;
  position: absolute;    
- top:5rem;
- left:5rem;
- background: #fff8f8;
+ bottom:20rem;
+ right:20rem;
+ background: rgba(255, 248, 248, 0.5);
  padding: 3rem;
  border-radius: 5px
+}
+
+.works-gallery__button {
+    display: none
+}
+
+.works-gallery__preview--active .works-gallery__button {
+   
+    cursor: pointer;
+   display: block;
+  
+    border: none;
+    border-radius: 10px;
+   
+    background:url('../img/arrow.png') no-repeat center;
+    background-size: contain;
+    padding: 20rem;
+   // background-color: #FFF8F8;
+    background-color: rgba(255, 248, 248, 0.5);
+    flex-shrink: 0;
+    border: 1rem #403E3E solid;
+    
+  
+}
+
+.works-gallery__button--right {
+    transform:rotate(180deg)
+}
+
+
+.works-gallery__button--right {
+           
+    margin-left: 3rem;
+}
+
+.works-gallery__button--left {
+    margin-right: 3rem;
 }
 
 @media (min-width: 720px) {
@@ -109,6 +174,40 @@
             }
 
     .works-gallery__previews {
-        grid-template-columns: 1fr 1fr 1fr 1fr }
+        grid-template-columns: 1fr 1fr 1fr 1fr 
+    
+    
+    }
+
+    .container--gallery {
+            max-width: 75%;
+           
+        }
+
+
+    .works-gallery__preview--active .works-gallery__button {
+           padding: 30rem;
+
+    }
+          
+
+
+    .works-gallery__button--right {
+           
+            margin-left: 100rem;
+    }
+
+    .works-gallery__button--left {
+            margin-right: 100rem;
+     }
+
+    
+
+       
+
+
+   
+
+     
 
   }

@@ -44,9 +44,12 @@
     border-radius: 10px
 }
 
+
+
 .description {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    
 }
 
 .description__text {
@@ -63,4 +66,17 @@
         width: 100%
         
     }
+
+    .container--description {
+        max-width: 75%;
+    }
+
+
+
+.description {
+
+    text-align: left;
+}
+
+
   }

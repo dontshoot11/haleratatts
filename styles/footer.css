@@ -7,7 +7,7 @@ footer{
     color:#fff;
     display: flex;
     justify-content: center;
-    margin: 10rem;
+    margin-top: 20rem;
 }
 .booking {
     width: 100%;
@@ -23,8 +23,9 @@ footer{
 
 .booking__content {
     max-width: 66%;
+    font-size: 18rem;
    
-    //height: 0rem;
+    
     overflow: hidden;
     transition: 0.3s
    
@@ -66,7 +67,26 @@ footer{
 
 .booking__svg {
    
-    height: 34rem;
-    width: 34rem;
+    height: 40rem;
+    width: 40rem;
+    
+}
+
+.credits {
+   width: 100%;
+
+
+margin-bottom: 10rem;
+margin-top: 50rem;
+font-size: 12rem;
+color: #fff
+
+}
+
+.credits__svg {
+    height: 15rem;
+    width: 15rem;
+    display: inline-block;
+    margin: 0 2rem 0 7rem;
     
 }

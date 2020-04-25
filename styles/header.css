@@ -11,7 +11,8 @@ header {
 .header__navigation 
 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin: 3rem 0;
 }
 
 
@@ -40,7 +41,7 @@ header {
 
 
   .header--small .header-logo {
-    font-size: 18rem;
+    font-size: 20rem;
     margin: 0
 
 }
@@ -62,7 +63,7 @@ header {
 
 .header__booking-link {
     text-decoration: underline;
-    font-size: 20rem;
+    font-size: 18rem;
 
 }
 
@@ -81,6 +82,10 @@ header {
    
     
  
+}
+
+.nav-menu {
+    display: flex
 }
 
 
