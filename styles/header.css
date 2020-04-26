@@ -62,8 +62,9 @@ header {
 
 
 .header__booking-link {
-    text-decoration: underline;
+    //text-decoration: underline;
     font-size: 18rem;
+    transition: 0.15s
 
 }
 
@@ -75,14 +76,21 @@ header {
     
 }
 
+
+
+
+
 .header--small .header__booking-link--right {
     display:flex;
     align-items: center;
-    color: #FFF7F7
+    color: #FFF7F7;
+    text-decoration: underline
    
     
  
 }
+
+
 
 .nav-menu {
     display: flex

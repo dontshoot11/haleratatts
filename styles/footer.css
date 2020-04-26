@@ -27,7 +27,7 @@ footer{
    
     
     overflow: hidden;
-    transition: 0.3s
+    transition: 0.1s
    
 }
 
@@ -62,14 +62,32 @@ footer{
 
 .booking__content--opened {
     height: auto;
-    transition: 0.3s
+    transition: 0.1s
+}
+
+.booking__href {
+    cursor: pointer;
 }
 
 .booking__svg {
    
     height: 40rem;
     width: 40rem;
+    transition: 0.1s;
+    cursor: pointer;
+   
+    pointer-events: none;
+    filter: saturate(0%) ;
+
     
+    
+}
+
+.booking__href:hover .booking__svg {
+    filter: saturate(100%);
+    transition: 0.1s;
+    
+   
 }
 
 .credits {
