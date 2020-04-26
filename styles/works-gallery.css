@@ -87,12 +87,7 @@
     
     }
 
-   // .works-gallery__picture-box:hover {
 
-    //    border: 2rem #030706 solid;
-      
-       
-   // }
 
 
 .works-gallery__picture {
@@ -216,7 +211,7 @@ display: none
 
 .works-gallery__navigation {
     display: flex;
-    margin-top: 10rem;
+    margin: 10rem 0;
 }
 
 .works-gallery__nav-button {
