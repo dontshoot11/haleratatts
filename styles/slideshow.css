@@ -6,6 +6,8 @@
 .container--slideshow {
     display: flex;
     justify-content: center;}
+
+    
 .slideshow {
     display: flex;
     justify-content: center;

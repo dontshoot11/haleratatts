@@ -230,6 +230,7 @@ display: none
     background-color: rgba(255, 248, 248, 0.5);
     flex-shrink: 0;
     border: 1rem #403E3E solid;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
 
 
