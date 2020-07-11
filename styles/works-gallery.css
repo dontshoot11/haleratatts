@@ -66,6 +66,10 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.works-gallery__picture-box--sketches {
+  background: #fff;
+}
+
 .works-gallery__picture {
   border-radius: 10px;
   max-width: 100%;
