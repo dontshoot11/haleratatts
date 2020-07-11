@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-
   position: relative;
   overflow: hidden;
 }
@@ -30,20 +29,19 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
   overflow: hidden;
-
   max-width: 200rem;
-  margin: 5rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
-  opacity: 0;
-  display: none;
+  display: flex;
+  height: 0;
+  position: absolute;
 }
 
 .works-gallery__preview--show {
-  opacity: 1;
-  display: flex;
+  height: auto;
+  margin: 5rem;
+  position: relative;
 }
 
 .works-gallery__preview:hover {
