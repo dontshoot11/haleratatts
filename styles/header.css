@@ -1,126 +1,91 @@
 header {
- 
-    background: #403E3E;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 998
-    
+  background: #403e3e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998;
 }
 
-.header__navigation 
-{
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 0;
+.header__navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
 }
-
-
 
 .header-logo {
-    font-size: 32rem;
-    
-    display: flex;
-    text-transform:uppercase;
-    
-    justify-content: center;
-    
-    
-    color:#FFF7F7;
-
-    font-family: 'New Rocker', cursive;
-
-    transition: 0.3s
+  font-size: 32rem;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  color: #fff7f7;
+  font-family: "New Rocker", cursive;
+  transition: 0.3s;
 }
 
 .header-logo__link {
-    display: flex;
-    align-items: center
+  display: flex;
+  align-items: center;
 }
 
-
-
-  .header--small .header-logo {
-    font-size: 20rem;
-    margin: 0
-
+.header--small .header-logo {
+  font-size: 20rem;
+  margin: 0;
 }
 
 .header--small .header-logo__svg {
-   
-    display: none
+  display: none;
 }
 
 .header--small .header__navigation {
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header--small .header__booking-link--center {
-    display:none
+  display: none;
 }
-
 
 .header__booking-link {
-    //text-decoration: underline;
-    font-size: 18rem;
-    transition: 0.15s
-
+  //text-decoration: underline;
+  font-size: 18rem;
+  transition: 0.15s;
 }
-
-
 
 .header__booking-link--right {
-    display:none;
-    color: #FFF7F7
-    
+  display: none;
+  color: #fff7f7;
 }
-
-
-
-
 
 .header--small .header__booking-link--right {
-    display:flex;
-    align-items: center;
-    color: #FFF7F7;
-    text-decoration: underline
-   
-    
- 
+  display: flex;
+  align-items: center;
+  color: #fff7f7;
+  text-decoration: underline;
 }
-
-
 
 .nav-menu {
-    display: flex
+  display: flex;
 }
 
-
-
-  @media (min-width: 720px) {
-      .header-logo {font-size: 44rem;
-    margin: 5rem 0 5rem 0}
-      .header-logo__svg {
-   
-        height: 40rem;
-        width: 40rem;
-        margin: 5rem
-    }
-    .header--small .header-logo {
-        font-size: 28rem;
-        margin: 0
-    
-    }
-    
-    .header--small .header-logo__svg {
-       
-        height: 24rem;
-        width: 24rem;
-        margin: 3rem;
-        display: block
-    }
-
-      
+@media (min-width: 720px) {
+  .header-logo {
+    font-size: 44rem;
+    margin: 5rem 0 5rem 0;
+  }
+  .header-logo__svg {
+    height: 40rem;
+    width: 40rem;
+    margin: 5rem;
+  }
+  .header--small .header-logo {
+    font-size: 28rem;
+    margin: 0;
   }
 
+  .header--small .header-logo__svg {
+    height: 24rem;
+    width: 24rem;
+    margin: 3rem;
+    display: block;
+  }
+}

@@ -1,576 +1,620 @@
-let sketches = $('.works-gallery__sketches .works-gallery__previews'); let works = $('.works-gallery__works .works-gallery__previews'); $(document).ready(function() { drawGallery(12, sketches) }); $(document).ready(function() { drawGallery(12, works)
-}); function drawGallery(picturesToShow, works) { let navigation = works.siblings('.works-gallery__navigation'); let buttonBackwards = navigation.find('.works-gallery__nav-button--backwards'); let buttonForwards = navigation.find('.works-gallery__nav-button--forwards');
-let yyy = 0; let zzz = picturesToShow; for (let i = yyy; i
-< zzz; i++) { $(works.children()[i]).addClass( 'works-gallery__preview--show') }; buttonBackwards.on( 'click', function() { let showingPictures=w orks.find( '.works-gallery__preview--show'); for
-    (let i=0 ; i <=s howingPictures.length; i++) { $(showingPictures[i]).removeClass( 'works-gallery__preview--show') }; yyy -=p icturesToShow; zzz -=p icturesToShow; for (let i=y yy; i < zzz; i++) { $(works.children()[i]).addClass(
-    'works-gallery__preview--show') }; if (yyy <=0 ) { buttonBackwards.css({ 'visibility': 'hidden', 'pointer-events': 'none' }) }; if (yyy + picturesToShow < works.children().length) { buttonForwards.css({ 'visibility': 'visible', 'pointer-events': 'auto' }) } }); buttonForwards.on(
-    'click', function() { event.preventDefault(); let showingPictures=w orks.find( '.works-gallery__preview--show'); for (let i=0 ; i <=s howingPictures.length; i++) { $(showingPictures[i]).removeClass( 'works-gallery__preview--show') }; yyy +=p icturesToShow;
-    zzz +=p icturesToShow; for (let i=y yy; i < zzz; i++) { $(works.children()[i]).addClass( 'works-gallery__preview--show') }; if (yyy> 0) { buttonBackwards.css({ 'visibility': 'visible', 'pointer-events': 'auto' }) }; if (yyy + picturesToShow > works.children().length) { buttonForwards.css({ 'visibility': 'hidden', 'pointer-events': 'none' }) } }); } Падение Берлинской стены
-    </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            1994
-        </div>
-        <div class="achievment__event">
-            Я родилась
-        </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            2000
-        </div>
-        <div class="achievment__event">
-            Путин президент России
-        </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            2016
-        </div>
-        <div class="achievment__event">
-            Сделала первую татуировку
-        </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            2017
-        </div>
-        <div class="achievment__event">
-            Начала работать в студии
-        </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            2018
-        </div>
-        <div class="achievment__event">
-            Чемпионат мира по футболу в России
-        </div>
-    </li>
-    <li class="achievment">
-        <div class="achievment__date">
-            2019
-        </div>
-        <div class="achievment__event">
-            Полностью отказалась от коммерческой татуировки
-        </div>
-    </li>
-    <li class="achievment">
-        В своей работе я предпочитаю чтобы машинка делала жжжж и мне не все равно, что бить
-    </li>
-    </ul>
-    </div>
-    </section>
-    <section class="works">
-        <div class="container container--gallery">
-            <div class="works-gallery">
-                <h2 class="section-heading" id="works">работы</h2>
-                <div class="works-gallery__works">
-                    <ul class="works-gallery__previews">
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
+<!DOCTYPE html>
+<html lang="ru">
 
-                            <div class="works-gallery__picture-box">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HALERATATTS</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
 
-
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/1.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/2.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/3.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/4.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/5.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/6.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/7.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/8.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/9.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/10.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/11.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/12.jpg" alt="фото татуировки">
-
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-
-
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/13.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/14.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/15.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/16.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/17.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/18.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/19.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/works/20.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                    </ul>
-                    <div class="works-gallery__navigation">
-                        <button class="works-gallery__nav-button works-gallery__nav-button--backwards"></button>
-                        <button class="works-gallery__nav-button works-gallery__nav-button--forwards"></button>
+<body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(62545624, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/62545624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav class="header__navigation">
+                    <div class="header-logo">
+                        <a class="header-logo__link" href=#>
+                            <div class="header-logo__text">HALERATATTS</div>
+                        </a>
                     </div>
+                    <a href="#booking" class="header__booking-link header__booking-link--right">контакты</a>
+                </nav>
+            </div>
+        </header>
+        <section class="halera">
+            <div class="container container--slideshow">
+                <div class="slideshow">
+                    <div class="slideshow__picture slideshow__picture--one"></div>
+                    <div class="slideshow__picture slideshow__picture--two"></div>
+                    <div class="slideshow__picture slideshow__picture--three"></div>
                 </div>
             </div>
-            <div class="works-gallery">
-                <h2 class="section-heading" id="sketches">Эскизы</h2>
-                <div class="works-gallery__sketches">
-                    <ul class="works-gallery__previews works-gallery__previews--sketches3 works-gallery__previews--active">
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" src="img/sketches/25.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/26.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/27.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/28.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/29.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/30.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/31.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/32.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/33.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/34.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/23.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/24.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-
-
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/13.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/14.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/15.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/16.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/17.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/18.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/19.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/20.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/21.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/22.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/1.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/2.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-
-
-
-
-
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/3.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/4.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/5.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/6.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/7.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/8.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/9.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/10.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/11.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                        <li class="works-gallery__preview">
-                            <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
-                            <button class="works-gallery__button works-gallery__button--left"></button>
-                            <div class="works-gallery__picture-box">
-                                <img class="works-gallery__picture" loading="lazy" src="img/sketches/12.jpg" alt="фото татуировки">
-                            </div>
-                            <button class="works-gallery__button works-gallery__button--right"></button>
-                        </li>
-                    </ul>
-                    <div class="works-gallery__navigation">
-                        <button class="works-gallery__nav-button works-gallery__nav-button--backwards"></button>
-                        <button class="works-gallery__nav-button works-gallery__nav-button--forwards"></button>
-                    </div>
-                </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="container container--about-me">
+                <h2 class="section-heading">Привет! Меня зовут Лера и я тату-мастер</h2>
+                <h2 class="section-heading">CV:</h2>
+                <ul class="achievments">
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            1989
+                        </div>
+                        <div class="achievment__event">
+                            Падение Берлинской стены
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            1994
+                        </div>
+                        <div class="achievment__event">
+                            Я родилась
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            2000
+                        </div>
+                        <div class="achievment__event">
+                            Путин президент России
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            2016
+                        </div>
+                        <div class="achievment__event">
+                            Сделала первую татуировку
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            2017
+                        </div>
+                        <div class="achievment__event">
+                            Начала работать в студии
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            2018
+                        </div>
+                        <div class="achievment__event">
+                            Чемпионат мира по футболу в России
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        <div class="achievment__date">
+                            2019
+                        </div>
+                        <div class="achievment__event">
+                            Полностью отказалась от коммерческой татуировки
+                        </div>
+                    </li>
+                    <li class="achievment">
+                        В своей работе я предпочитаю чтобы машинка делала жжжж и мне не все равно, что бить
+                    </li>
+                </ul>
             </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="footer__content">
-                <div class="booking" id="booking">
-                    <div class="booking__content">
-                        Записаться на сеанс, выбрать свободный эскиз или обсудить свой собственный, вы можете удобным для вас способом
-                        <ul class="booking__links">
-                            <li class="booking__link">
-                                <a href="https://www.instagram.com/haleratatts/" class="booking__href">
-                                    <img src="svg/instagram.svg" alt="" class="booking__svg">
-                                </a>
+        </section>
+        <section class="works">
+            <div class="container container--gallery">
+                <div class="works-gallery">
+                    <h2 class="section-heading" id="works">работы</h2>
+                    <div class="works-gallery__works">
+                        <ul class="works-gallery__previews">
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/1.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
                             </li>
-                            <li class="booking__link">
-                                <a href="https://teleg.run/haleratatts" class="booking__href">
-                                    <img src="svg/telegram.svg" alt="" class="booking__svg">
-                                </a>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/2.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
                             </li>
-                            <li class="booking__link">
-                                <a href="https://vk.com/haleratattoo" class="booking__href">
-                                    <img src="svg/vk.svg" alt="" class="booking__svg">
-                                </a>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/3.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/4.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/5.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/6.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/7.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/8.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/9.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/10.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/11.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/12.jpg" alt="фото татуировки">
+
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/13.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/14.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/15.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/16.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/17.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/18.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/19.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/works/20.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
                             </li>
                         </ul>
+                        <div class="works-gallery__navigation">
+                            <button class="works-gallery__nav-button works-gallery__nav-button--backwards"></button>
+                            <button class="works-gallery__nav-button works-gallery__nav-button--forwards"></button>
+                        </div>
                     </div>
                 </div>
+                <div class="works-gallery">
+                    <h2 class="section-heading" id="sketches">Эскизы</h2>
+                    <div class="works-gallery__sketches">
+                        <ul class="works-gallery__previews works-gallery__previews--sketches3 works-gallery__previews--active">
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" src="img/sketches/25.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/26.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/27.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/28.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/29.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/30.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/31.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/32.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/33.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/34.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/23.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/24.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/13.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/14.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/15.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/16.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/17.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/18.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/19.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/20.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/21.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/22.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/1.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/2.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/3.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/4.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/5.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/6.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/7.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/8.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/9.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/10.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/11.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                            <li class="works-gallery__preview">
+                                <p class="works-gallery__tip">нажмите в любом месте, чтобы уменьшить</p>
+                                <button class="works-gallery__button works-gallery__button--left"></button>
+                                <div class="works-gallery__picture-box">
+                                    <img class="works-gallery__picture" loading="lazy" src="img/sketches/12.jpg" alt="фото татуировки">
+                                </div>
+                                <button class="works-gallery__button works-gallery__button--right"></button>
+                            </li>
+                        </ul>
+                        <div class="works-gallery__navigation">
+                            <button class="works-gallery__nav-button works-gallery__nav-button--backwards"></button>
+                            <button class="works-gallery__nav-button works-gallery__nav-button--forwards"></button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer__content">
+                    <div class="booking" id="booking">
+                        <div class="booking__content">
+                            Записаться на сеанс, выбрать свободный эскиз или обсудить свой собственный, вы можете удобным для вас способом
+                            <ul class="booking__links">
+                                <li class="booking__link">
+                                    <a href="https://www.instagram.com/haleratatts/" class="booking__href">
+                                        <img src="svg/instagram.svg" alt="" class="booking__svg">
+                                    </a>
+                                </li>
+                                <li class="booking__link">
+                                    <a href="https://teleg.run/haleratatts" class="booking__href">
+                                        <img src="svg/telegram.svg" alt="" class="booking__svg">
+                                    </a>
+                                </li>
+                                <li class="booking__link">
+                                    <a href="https://vk.com/haleratattoo" class="booking__href">
+                                        <img src="svg/vk.svg" alt="" class="booking__svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="credits">Сайт сделал Тёма Никитин
+                    <a href="https://teleg.run/VincentVanKek" class="credits__link">  @VincentVanKek</a>
+                </div>
             </div>
-            <div class="credits">Сайт сделал Тёма Никитин
-                <a href="https://teleg.run/VincentVanKek" class="credits__link">  @VincentVanKek</a>
-            </div>
+        </footer>
         </div>
-    </footer>
-    </div>
-    <script type="text/javascript" src="script/header.js"></script>
-    <script type="text/javascript" src="script/slideshow.js"></script>
-    <script type="text/javascript" src="script/gallery.js"></script>
-    <script type="text/javascript" src="script/pictureShow.js"></script>
-    </body>
+        <script type="text/javascript" src="script/header.js"></script>
+        <script type="text/javascript" src="script/slideshow.js"></script>
+        <script type="text/javascript" src="script/gallery.js"></script>
+        <script type="text/javascript" src="script/pictureShow.js"></script>
+</body>
 
-    </html>
+</html>

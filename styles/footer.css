@@ -61,7 +61,6 @@ footer {
   width: 40rem;
   transition: 0.1s;
   cursor: pointer;
-
   pointer-events: none;
   filter: saturate(0%);
 }
@@ -73,7 +72,6 @@ footer {
 
 .credits {
   width: 100%;
-
   margin-bottom: 10rem;
   margin-top: 50rem;
   font-size: 12rem;
