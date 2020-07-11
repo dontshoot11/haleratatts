@@ -1,110 +1,88 @@
-footer{
-    background:#403E3E;
-    
-
+footer {
+  background: #403e3e;
 }
 .footer__content {
-    color:#fff;
-    display: flex;
-    justify-content: center;
-    margin-top: 20rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
 }
 .booking {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
 .booking__content {
-    max-width: 66%;
-    font-size: 18rem;
-   
-    
-    overflow: hidden;
-    transition: 0.1s
-   
+  max-width: 66%;
+  font-size: 18rem;
+
+  overflow: hidden;
+  transition: 0.1s;
 }
 
 .booking__links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .booking__link {
-    color: #d6249f;
-    font-weight: bold;
-    font-size: 28rem;
-    margin-right: 10rem;
-    margin-top: 10rem;
- 
-    
-    text-align: center;
-    text-decoration: underline
+  color: #d6249f;
+  font-weight: bold;
+  font-size: 28rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+
+  text-align: center;
+  text-decoration: underline;
 }
 
 .booking__link:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-
-
-
 .booking__link:visited {
-    color: #d6249f
-    
+  color: #d6249f;
 }
 
 .booking__content--opened {
-    height: auto;
-    transition: 0.1s
+  height: auto;
+  transition: 0.1s;
 }
 
 .booking__href {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .booking__svg {
-   
-    height: 40rem;
-    width: 40rem;
-    transition: 0.1s;
-    cursor: pointer;
-   
-    pointer-events: none;
-    filter: saturate(0%) ;
+  height: 40rem;
+  width: 40rem;
+  transition: 0.1s;
+  cursor: pointer;
 
-    
-    
+  pointer-events: none;
+  filter: saturate(0%);
 }
 
 .booking__href:hover .booking__svg {
-    filter: saturate(100%);
-    transition: 0.1s;
-    
-   
+  filter: saturate(100%);
+  transition: 0.1s;
 }
 
 .credits {
-   width: 100%;
+  width: 100%;
 
-
-margin-bottom: 10rem;
-margin-top: 50rem;
-font-size: 12rem;
-color: #fff
-
+  margin-bottom: 10rem;
+  margin-top: 50rem;
+  font-size: 12rem;
+  color: #fff;
 }
 
 .credits__svg {
-    height: 15rem;
-    width: 15rem;
-    display: inline-block;
-    margin: 0 2rem 0 7rem;
-    
+  height: 15rem;
+  width: 15rem;
+  display: inline-block;
+  margin: 0 2rem 0 7rem;
 }

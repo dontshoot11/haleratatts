@@ -40,7 +40,7 @@
 }
 
 .works-gallery__preview {
-    display: none;
+    
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -51,6 +51,8 @@
     margin: 5rem;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
+    opacity: 0;
+    display: none;
     
     
     
@@ -58,6 +60,8 @@
 
 
 .works-gallery__preview--show {
+    opacity: 1;
+
     display: flex;
     
 }
