@@ -10,14 +10,15 @@
 .slideshow {
   display: flex;
   justify-content: center;
-
-  width: 100vw;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .slideshow__picture {
   height: 150rem;
   width: 100%;
-  display: none;
+  display: block;
 }
 
 .slideshow__picture--one {

@@ -1,3 +1,5 @@
+@import url("styles/owlcarousel/owl.carousel.min.css");
+@import url("styles/owlcarousel/owl.theme.default.min.css");
 @import url("styles/reset.css");
 @import url("styles/normalize.css");
 @import url("https://fonts.googleapis.com/css?family=Bellota+Text&display=swap");

@@ -1,4 +1,4 @@
-let pictures = $(".works-gallery__preview");
+/*let pictures = $(".works-gallery__preview");
 
 pictures.on("click", function() {
     event.preventDefault();
@@ -34,4 +34,4 @@ rightButton.on("click", function() {
     let picture = $(".works-gallery__preview--active");
     let nextPicture = picture.next();
     nextPicture.toggleClass("works-gallery__preview--active");
-});
+}); */
