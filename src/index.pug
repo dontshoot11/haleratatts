@@ -12,25 +12,21 @@ head
   script(type='text/javascript' src='unitegallery/js/unitegallery.min.js')
   link(rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css')
   script(type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js')
-//Yandex.Metrika counter
-//
-  <script type="text/javascript">
-  (function(m, e, t, r, i, k, a) {
-  m[i] = m[i] || function() {
-  (m[i].a = m[i].a || []).push(arguments)
-  };
-  m[i].l = 1 * new Date();
-  k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-  })
+  // Yandex.Metrika counter
+script(type='text/javascript').
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
   ym(62545624, "init", {
-  clickmap: true,
-  trackLinks: true,
-  accurateTrackBounce: true
+  clickmap:true,
+  trackLinks:true,
+  accurateTrackBounce:true,
+  webvisor:true
   });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/62545624" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-// /Yandex.Metrika counter
+noscript
+  div
+    img(src='https://mc.yandex.ru/watch/62545624' style='position:absolute; left:-9999px;' alt='')
+// /Yandex.Metrika counter  
 .wrapper
     header
         .container
@@ -99,7 +95,7 @@ head
                         img(alt='' src='img/works/' +i + '.jpg' data-image='img/works/' + i +'.jpg')
             .works-gallery__sketches
                  #gallery2.works-gallery__previews(style='display:none;')
-                    - for (let i =40; i >0 ; i--)
+                    - for (let i =49; i >0 ; i--)
                         img(alt='' src='img/sketches/' +i + '.jpg' data-image='img/sketches/' + i +'.jpg')
     footer
         .container
