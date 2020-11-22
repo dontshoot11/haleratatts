@@ -1,29 +1,29 @@
 .works {
-  margin-bottom: 5rem;
+    margin-bottom: 25rem;
 }
 
 .works-gallery {
-  max-width: 75%;
-  margin: 0 auto;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  .works-gallery {
-    max-width: 95%;
-    margin: 0 auto;
-  }
+    .works-gallery {
+        max-width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .works-gallery__navigation {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .gallery-navigation-button {
-  cursor: pointer;
-  text-decoration: underline;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .works-gallery__sketches {
-  display: none;
+    display: none;
 }

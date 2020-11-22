@@ -21,6 +21,9 @@ sketchesButton.click(function() {
 function showGallery(which) {
     $(which).unitegallery({
         gallery_theme: "tiles",
-        tiles_type: "justified",
+        gallery_theme: "tilesgrid",
+        tile_enable_border: false,
+        tile_enable_shadow: false,
+        theme_bullets_margin_top: 25,
     });
 }

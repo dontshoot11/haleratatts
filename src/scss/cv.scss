@@ -1,37 +1,4 @@
 .container--about-me {
-  display: flex;
-  flex-direction: column;
-}
-
-.achievments {
-  list-style-type: none;
-  text-align: left;
-}
-
-.achievment {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-
-.achievment:last-child {
-  margin-bottom: 0;
-}
-
-.achievment__date {
-  margin-right: 20rem;
-  font-weight: bold;
-  display: block;
-  width: 100rem;
-}
-
-@media (min-width: 720px) {
-  .container--about-me {
     display: flex;
     flex-direction: column;
-    max-width: 75%;
-  }
-  .achievment {
-    flex-direction: row;
-  }
 }
